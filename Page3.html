@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="margin: 0">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div id="navbar">
+  <a href="https://www.climbcentral.sg/" target="_blank" id="logo"><img src="CCLogoo.png" alt="Climb Central" width="170" height="50"></a>
+  <div id="navbar-right">
+    <a href="index.html">Home</a>
+    <a href="Page2.html">Rates</a>
+    <a class="active" href="#">Facilities</a>
+    <a href="Page4.html">Verifications</a>
+  </div>
+</div>
+
+<br>
+<br>
+ <div class="bgimg-6">
+    <div class="caption">
+      <span class="border">Facilities</span>
+    </div>
+  </div>
+
+<div class="main-container">
+    <h1 style="color: white">Meet the people behind the scenes</h1>
+    <br>
+    <div class="responsive">
+      <iframe width="950" height="534" src="https://www.youtube.com/embed/9my5mcGlr1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <p>You’ve probably seen them around the gym climbing or routesetting. In time to come, Chris, Shi Hui, and Dehua<br> will also be sharing with us their experience in bouldering, sport climbing and adaptive climbing!</p>
+</div>
+
+  <div class="bgimg-7">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:50px;color: black;">Lead & Top-Rope</span>
+    </div>
+  </div>
+
+	<div style="color: #777;background-color:#282E34;text-align:center;padding:80px 80px;text-align: justify;">
+ 		<h3 style="text-align:center;color: white;">What you can expect!</h3>
+ 		<p style="text-align:center;color:white;">Climb Central is home to Singapore's tallest lead and top-rope walls and we have quality boulder gyms at all outlets as well. Come and try them all!<br>If you are a <b>new climber</b>, click below to register for verification.</p>
+    <div class="buttoncenter">
+    <button class="button" onclick="goVerification()"><span>Top-rope & Lead verification</span></button>
+    </div>
+
+ 	</div>
+
+
+  <div class="bgimg-8">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:50px;color: black;">Bouldering</span>
+    </div>
+  </div>
+
+<div class="main-container">
+    <h1 style="color: white">New to bouldering? Here's a quick introduction to get you started.</h1>
+    <br>
+    <div class="responsive">
+      <iframe width="950" height="534" src="https://www.youtube.com/embed/YcDLRW2rDB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <p>Bouldering is a very exciting and physically demanding form of climbing. Remember to be gracious when sharing the space with others and remember, safety first!</p>
+</div>
+
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border" style="font-size:50px;color: white;">Auto-belay</span>
+    </div>
+  </div>
+
+<div class="main-container">
+    <h1 style="color: white">How to: Autobelay</h1>
+    <br>
+    <div class="responsive">
+      <iframe width="950" height="534" src="https://www.youtube.com/embed/6VVakz1YOqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <p>Climb Central has 10 Autobelays available for those who want to do some climbing on their own without a partner. Here's a quick video on how they are used.</p>
+</div>
+
+
+<script>
+var mybutton = document.getElementById("myBtn");
+var logo = document.getElementById("logo");
+var navbar = document.getElementById("navbar");
+
+window.addEventListener('scroll', navFunction);
+window.addEventListener('scroll', scrollFunction);
+
+function navFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "4px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+// When the user scrolls down 20px, show the button
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function goVerification() {
+  window.location.href = "Page4.html"
+}
+</script>
+
+<footer>
+<hr style="width:70%;text-align:middle">
+© 2020 Climb Central Pte. Ltd.</footer>
+</body>
+</html>
